@@ -81,7 +81,8 @@
   position: relative;
   overflow: hidden;
   max-width: 530px;
-  margin: auto auto 1rem;
+  /* margin: auto auto 1rem; */
+  margin: 0 auto;
 }
 
 .portfolio-item .caption {
@@ -92,13 +93,14 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
+  margin: 0 auto;
 }
 
 .portfolio-item .caption .caption-content {
   margin: auto 2rem 2rem;
   color:black; /* Making the portfolio caption fonts black */
-  background: rgba(189, 93, 56, 0.9); /* Background color for the caption content text */
+  background:#c2af1d; /* Background color for the caption content text */
 }
 
 .portfolio-item .caption .caption-content h2 {
@@ -132,22 +134,21 @@
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
-    background: rgba(189, 93, 56, 0.9);
-  }
+    }
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
-    filter: blur(0px); /* Adding blur to the portfolio images */
+    /* filter: blur(0px); Adding blur to the portfolio images */
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(189, 93, 56, 0.9);
+    background-color:#c2af1d;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
