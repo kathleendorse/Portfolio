@@ -21,7 +21,7 @@
         /* // Small devices (landscape phones, 576px and up) */
         @media screen and (max-width: 767px) { 
             .img-fluid{
-                width:100%;}
+                width:80%;}
             }
         /* // Medium devices (tablets, 768px and up) */
         @media screen and (max-width: 979px) {
